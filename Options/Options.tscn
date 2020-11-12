@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Options/Options_Assets/exit_button.png" type="Texture" id=1]
+[ext_resource path="res://Options/Options_Assets/option_button.png" type="Texture" id=2]
+[ext_resource path="res://Options/Options.gd" type="Script" id=3]
+
+[node name="ColorRect" type="ColorRect"]
+margin_right = 800.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SceneTitle" type="Sprite" parent="."]
+position = Vector2( 400, 80 )
+scale = Vector2( 9, 9 )
+texture = ExtResource( 2 )
+
+[node name="ExitButton" type="Button" parent="."]
+margin_left = 180.0
+margin_top = 440.0
+margin_right = 256.0
+margin_bottom = 462.0
+rect_scale = Vector2( 6, 6 )
+icon = ExtResource( 1 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EfeitoSonoro" type="CheckBox" parent="."]
+margin_left = 530.032
+margin_top = 249.464
+margin_right = 554.032
+margin_bottom = 273.464
+rect_scale = Vector2( 4, 4 )
+pressed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="EfeitoSonoro"]
+margin_left = -88.0994
+margin_top = 5.67307
+margin_right = -2.09943
+margin_bottom = 19.6731
+text = "Habilitar Som"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="ExitButton" to="." method="_on_ExitButton_mouse_entered"]
+[connection signal="mouse_exited" from="ExitButton" to="." method="_on_ExitButton_mouse_exited"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="toggled" from="EfeitoSonoro" to="." method="_on_EfeitoSonoro_toggled"]
