@@ -1,0 +1,261 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://Background/Background_Assets/level_letters.png" type="Texture" id=1]
+[ext_resource path="res://Background/Background_Assets/missao_letters.png" type="Texture" id=2]
+[ext_resource path="res://Background/Background_Assets/letters_background.png" type="Texture" id=3]
+[ext_resource path="res://Background/Background_Assets/BackgroundImage.png" type="Texture" id=4]
+[ext_resource path="res://Background/Background_Assets/exit_button.png" type="Texture" id=5]
+[ext_resource path="res://Background/Background_Assets/option_button.png" type="Texture" id=6]
+[ext_resource path="res://Background/Background.gd" type="Script" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "ExpandEffect"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("ExpandEffect:zoom:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0.1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("ExpandEffect:zoom:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0.1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 0, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 0, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 0, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 0, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 1000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 1500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 1500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 1500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 1500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 1500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 2000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 2000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 2000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 2000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 2000, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 2500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 4 )
+region = Rect2( 500, 2500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 4 )
+region = Rect2( 1000, 2500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 4 )
+region = Rect2( 1500, 2500, 500, 500 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 4 )
+region = Rect2( 2000, 2500, 500, 500 )
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/ExpandEffect = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+rotation = -1.5708
+frames = SubResource( 32 )
+frame = 25
+playing = true
+
+[node name="LettersBackground" type="Sprite" parent="."]
+position = Vector2( 170, 0 )
+scale = Vector2( 10, 31 )
+texture = ExtResource( 3 )
+
+[node name="Collisions" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PoolVector2Array( -250, 248, -250, -212, 92, -209, 92, 250, 138, 292, 150, -272, -301, -275, -309, 299, 138, 294, 91, 248 )
+
+[node name="LevelLetters" type="Sprite" parent="."]
+position = Vector2( 172, -195 )
+texture = ExtResource( 1 )
+
+[node name="MissionLetters" type="Sprite" parent="."]
+position = Vector2( 172, -130 )
+texture = ExtResource( 2 )
+
+[node name="ExitButton" type="Button" parent="."]
+margin_left = 93.0
+margin_top = 204.0
+margin_right = 169.0
+margin_bottom = 226.0
+rect_scale = Vector2( 2, 2 )
+icon = ExtResource( 5 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsButton" type="Button" parent="."]
+margin_left = 93.0
+margin_top = 152.0
+margin_right = 169.0
+margin_bottom = 175.0
+rect_scale = Vector2( 2, 2 )
+icon = ExtResource( 6 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExpandEffect" type="Camera2D" parent="."]
+position = Vector2( 0.0271912, 15.1272 )
+current = true
+
+[node name="Level" type="Label" parent="."]
+margin_left = 104.0
+margin_top = -182.027
+margin_right = 144.0
+margin_bottom = -168.027
+rect_scale = Vector2( 3.5, 2.5 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Missao" type="Label" parent="."]
+margin_left = 104.0
+margin_top = -103.0
+margin_right = 144.0
+margin_bottom = -89.0
+rect_scale = Vector2( 3.5, 2.5 )
+text = "3"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MissaoInfo" type="Label" parent="."]
+margin_left = 142.866
+margin_top = -119.452
+margin_right = 198.866
+margin_bottom = -71.4519
+text = "Matar  
+
+
+Inimigos"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="ExitButton" to="." method="_on_ExitButton_mouse_entered"]
+[connection signal="mouse_exited" from="ExitButton" to="." method="_on_ExitButton_mouse_exited"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="mouse_entered" from="OptionsButton" to="." method="_on_OptionsButton_mouse_entered"]
+[connection signal="mouse_exited" from="OptionsButton" to="." method="_on_OptionsButton_mouse_exited"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/death.wav-d954c54c1bdd0ed26d942ca8f2cf0a31.sample"
+
+[deps]
+
+source_file="res://Enemies/Tank/Tank_Assets/death.wav"
+dest_files=[ "res://.import/death.wav-d954c54c1bdd0ed26d942ca8f2cf0a31.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shoot.wav-f1e6f02ae9bad5af0083828ec906d1ec.sample"
+
+[deps]
+
+source_file="res://Enemies/Fast/Fast_Assets/shoot.wav"
+dest_files=[ "res://.import/shoot.wav-f1e6f02ae9bad5af0083828ec906d1ec.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
